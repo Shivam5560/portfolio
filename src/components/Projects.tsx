@@ -6,7 +6,7 @@ import { VirusIcon } from "./Icons";
 
 const iconMap: Record<string, React.ElementType> = {
   Database, Bot, MessageSquare, FileCheck, FileOutput, Brain,
-  FileSpreadsheet, HeartPulse, Leaf, VirusIcon as Virus, Languages,
+  FileSpreadsheet, HeartPulse, Leaf, Virus: VirusIcon, Languages,
   Camera, Droplets, Feather,
 };
 
