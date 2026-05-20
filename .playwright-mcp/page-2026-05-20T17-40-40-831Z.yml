@@ -1,0 +1,607 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "SS" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+      - navigation [ref=e5]:
+        - link "About" [ref=e6] [cursor=pointer]:
+          - /url: "#about"
+        - link "Experience" [ref=e7] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Projects" [ref=e8] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Skills" [ref=e9] [cursor=pointer]:
+          - /url: "#skills"
+        - link "Contact" [ref=e10] [cursor=pointer]:
+          - /url: "#contact"
+      - link "Get in touch" [ref=e11] [cursor=pointer]:
+        - /url: mailto:shivamsourav2003@gmail.com
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]: SS
+      - heading "Shivam Sourav" [level=1] [ref=e15]
+      - paragraph [ref=e16]: "@shivamsourav"
+      - paragraph [ref=e17]:
+        - generic [ref=e18]: 
+        - text: Kolkata, India
+      - paragraph [ref=e19]: AI/ML Engineer & Associate Software Engineer
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - strong [ref=e22]: "59"
+          - text: Repositories
+        - generic [ref=e23]:
+          - strong [ref=e24]: "9.7"
+          - text: B.Tech CGPA
+        - generic [ref=e25]:
+          - strong [ref=e26]: 2+
+          - text: Years Coding
+        - generic [ref=e27]:
+          - strong [ref=e28]: 10+
+          - text: AI Projects
+      - generic [ref=e29]:
+        - link " Contact me" [ref=e30] [cursor=pointer]:
+          - /url: mailto:shivamsourav2003@gmail.com
+          - generic [ref=e31]: 
+          - text: Contact me
+        - link " GitHub" [ref=e32] [cursor=pointer]:
+          - /url: https://github.com/Shivam5560
+          - generic [ref=e33]: 
+          - text: GitHub
+        - link " LinkedIn" [ref=e34] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/shivam-sourav-b889aa204/
+          - generic [ref=e35]: 
+          - text: LinkedIn
+        - link " Resume" [ref=e36] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e37]: 
+          - text: Resume
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: 
+          - text: Open to work
+        - generic [ref=e41]:
+          - generic [ref=e42]: 
+          - text: Pull Shark
+        - generic [ref=e43]:
+          - generic [ref=e44]: 
+          - text: YOLO
+    - generic [ref=e46]:
+      - generic [ref=e47]: About
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - paragraph [ref=e50]:
+            - text: I'm an AI/ML engineer passionate about building intelligent systems that move from experiments into production. Currently at
+            - strong [ref=e51]: Nomura Research Institute
+            - text: ", I architect RAG platforms, LLM applications, and microservices that handle real workloads."
+          - paragraph [ref=e52]: My work spans the full stack of AI engineering — from fine-tuning LLMs and building retrieval pipelines to designing scalable Java microservices with Spring Boot. I've led teams at Omdena, built Text2SQL platforms, and shipped production-grade AI systems used by real users.
+          - paragraph [ref=e53]: "I thrive at the intersection of research and engineering: taking papers and turning them into working, reliable software. When I'm not coding, I'm exploring new model architectures, contributing to open-source, or mentoring juniors in AI/ML."
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: 
+            - generic [ref=e57]:
+              - strong [ref=e58]: Nomura Research Institute
+              - generic [ref=e59]: Associate Software Engineer (2024–Present)
+          - generic [ref=e60]:
+            - generic [ref=e61]: 
+            - generic [ref=e62]:
+              - strong [ref=e63]: SMIT, Sikkim
+              - generic [ref=e64]: B.Tech in AI & Data Science · CGPA 9.7
+          - generic [ref=e65]:
+            - generic [ref=e66]: 
+            - generic [ref=e67]:
+              - strong [ref=e68]: Omdena
+              - generic [ref=e69]: Data Scientist · Led 10-member ML team
+          - generic [ref=e70]:
+            - generic [ref=e71]: 
+            - generic [ref=e72]:
+              - strong [ref=e73]: 59 GitHub Repos
+              - generic [ref=e74]: 10 followers · Open source contributor
+    - generic [ref=e76]:
+      - generic [ref=e77]: Experience
+      - heading "Where I've worked" [level=2] [ref=e78]
+      - generic [ref=e79]:
+        - article [ref=e80]:
+          - generic [ref=e81]: Aug 2024 — Present
+          - generic [ref=e82]:
+            - heading "Associate Software Engineer" [level=3] [ref=e83]
+            - paragraph [ref=e84]: Nomura Research Institute and Financial Technology · Kolkata
+            - list [ref=e85]:
+              - listitem [ref=e86]:
+                - text: Architected a
+                - strong [ref=e87]: report microservice
+                - text: as a pluggable JAR framework enabling remote app integration and centralized report execution across multiple services.
+              - listitem [ref=e88]:
+                - text: Designed a
+                - strong [ref=e89]: Camunda External Tasks & Saga-based workflow service
+                - text: for generic authorization flows on Java 21 and Spring Boot, orchestrating complex distributed transactions.
+              - listitem [ref=e90]:
+                - text: Built a
+                - strong [ref=e91]: Python AI microservice
+                - text: with multi-tenant RAG, query decomposition, semantic caching, Langfuse observability, RAGAS evaluation, Spring Cloud Gateway, and Eureka service discovery.
+              - listitem [ref=e92]:
+                - text: Implemented
+                - strong [ref=e93]: multi-strategy rate limiting
+                - text: and an
+                - strong [ref=e94]: SSO authentication bridge
+                - text: for cross-application single sign-on across the platform.
+              - listitem [ref=e95]:
+                - text: Developed an
+                - strong [ref=e96]: LLM-based ATS
+                - text: (Applicant Tracking System) using LlamaIndex, Cohere embeddings, Pinecone vector DB, Next.js, and FastAPI — achieving
+                - strong [ref=e97]: 90%+ resume matching quality
+                - text: .
+            - generic [ref=e98]:
+              - generic [ref=e99]: Java 21
+              - generic [ref=e100]: Spring Boot
+              - generic [ref=e101]: Python
+              - generic [ref=e102]: FastAPI
+              - generic [ref=e103]: LlamaIndex
+              - generic [ref=e104]: Pinecone
+              - generic [ref=e105]: Cohere
+              - generic [ref=e106]: Camunda
+              - generic [ref=e107]: Langfuse
+              - generic [ref=e108]: RAGAS
+              - generic [ref=e109]: Next.js
+              - generic [ref=e110]: Eureka
+        - article [ref=e111]:
+          - generic [ref=e112]: Nov 2023 — Jun 2024
+          - generic [ref=e113]:
+            - heading "Data Scientist" [level=3] [ref=e114]
+            - paragraph [ref=e115]: Omdena · Remote
+            - list [ref=e116]:
+              - listitem [ref=e117]:
+                - text: Led a
+                - strong [ref=e118]: 10-member subgroup
+                - text: across data preprocessing and ML model deployment within a 40-person international collaboration.
+              - listitem [ref=e119]:
+                - text: Conducted focused
+                - strong [ref=e120]: Pandas & NumPy workshops
+                - text: that improved shared workflows and accelerated model delivery across the team.
+              - listitem [ref=e121]:
+                - text: Contributed to
+                - strong [ref=e122]: Crop Disease Detection
+                - text: (Kenya) and
+                - strong [ref=e123]: COVID-19 analysis
+                - text: (Zambia) projects using ML and deep learning techniques.
+            - generic [ref=e124]:
+              - generic [ref=e125]: Python
+              - generic [ref=e126]: Pandas
+              - generic [ref=e127]: NumPy
+              - generic [ref=e128]: Scikit-Learn
+              - generic [ref=e129]: Deep Learning
+              - generic [ref=e130]: Team Leadership
+    - generic [ref=e132]:
+      - generic [ref=e133]: Projects
+      - heading "What I've built" [level=2] [ref=e134]
+      - paragraph [ref=e135]: 59 repositories on GitHub. Here are the highlights across AI, full-stack, and data science.
+      - generic [ref=e136]:
+        - article [ref=e137]:
+          - generic [ref=e139]: 
+          - generic [ref=e140]:
+            - generic [ref=e141]: 
+            - text: "2"
+          - heading "AuraSQL" [level=3] [ref=e142]
+          - paragraph [ref=e143]: AI-powered Text2SQL platform with configurable multi-database connectivity, multi-table selection, executable SQL generation, Cohere embeddings, Pinecone schema retrieval, Groq LLMs, Supabase auth, and a Next.js dashboard. Cuts Text2SQL workflow time by 85%.
+          - generic [ref=e144]:
+            - generic [ref=e145]: Next.js
+            - generic [ref=e146]: TypeScript
+            - generic [ref=e147]: Groq
+            - generic [ref=e148]: Pinecone
+            - generic [ref=e149]: Supabase
+            - generic [ref=e150]: Cohere
+          - link "View on GitHub " [ref=e151] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/AuraSQL
+            - text: View on GitHub
+            - generic [ref=e152]: 
+        - article [ref=e153]:
+          - generic [ref=e155]: 
+          - generic [ref=e156]:
+            - generic [ref=e157]: 
+            - text: "2"
+          - heading "Professional Grade RAG" [level=3] [ref=e158]
+          - paragraph [ref=e159]: Production-ready RAG system with hybrid BM25 + semantic retrieval, mxbai-rerank-large-v2 reranking, LlamaIndex conversational context, Postgres + pgvector storage, Groq LLM integration, and traceable source citations. Built for reliability and scale.
+          - generic [ref=e160]:
+            - generic [ref=e161]: LlamaIndex
+            - generic [ref=e162]: Python
+            - generic [ref=e163]: pgvector
+            - generic [ref=e164]: Postgres
+            - generic [ref=e165]: Groq
+            - generic [ref=e166]: BM25
+          - link "View on GitHub " [ref=e167] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/Professional_Grade_RAG
+            - text: View on GitHub
+            - generic [ref=e168]: 
+        - article [ref=e169]:
+          - generic [ref=e171]: 
+          - generic [ref=e172]:
+            - generic [ref=e173]: 
+            - text: "2"
+          - heading "RAG Chatbot" [level=3] [ref=e174]
+          - paragraph [ref=e175]: Conversational RAG chatbot with streaming responses, document upload, intelligent chunking strategies, and multi-turn conversation memory. Built with a clean, responsive frontend.
+          - generic [ref=e176]:
+            - generic [ref=e177]: Python
+            - generic [ref=e178]: LangChain
+            - generic [ref=e179]: Streaming
+            - generic [ref=e180]: Vector Search
+          - link "View on GitHub " [ref=e181] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/RAG-CHATBOT
+            - text: View on GitHub
+            - generic [ref=e182]: 
+      - generic [ref=e183]:
+        - article [ref=e184]:
+          - generic [ref=e186]: 
+          - heading "ATS Resume Matcher" [level=3] [ref=e187]
+          - paragraph [ref=e188]: LLM-based applicant tracking system with semantic resume-to-JD matching, explainable scoring, and Cohere embeddings with Pinecone vector search.
+          - generic [ref=e189]:
+            - generic [ref=e190]: Python
+            - generic [ref=e191]: Cohere
+            - generic [ref=e192]: FastAPI
+            - generic [ref=e193]: Pinecone
+          - link "View " [ref=e194] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/ATS
+            - text: View
+            - generic [ref=e195]: 
+        - article [ref=e196]:
+          - generic [ref=e198]: 
+          - heading "ResumeGen" [level=3] [ref=e199]
+          - paragraph [ref=e200]: AI-powered resume generator that creates tailored, ATS-optimized resumes from user input with multiple templates and formats. 1 star on GitHub.
+          - generic [ref=e201]:
+            - generic [ref=e202]: TypeScript
+            - generic [ref=e203]: Next.js
+            - generic [ref=e204]: AI
+          - link "View " [ref=e205] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/ResumeGen
+            - text: View
+            - generic [ref=e206]: 
+        - article [ref=e207]:
+          - generic [ref=e209]: 
+          - heading "Nepali LLM" [level=3] [ref=e210]
+          - paragraph [ref=e211]: Trained a SentencePiece tokenizer on Nepali text reducing token count by 80%, then fine-tuned Gemma-2B with LoRA for low-resource language NLU.
+          - generic [ref=e212]:
+            - generic [ref=e213]: Gemma
+            - generic [ref=e214]: LoRA
+            - generic [ref=e215]: Python
+            - generic [ref=e216]: Streamlit
+        - article [ref=e217]:
+          - generic [ref=e219]: 
+          - heading "nexus_fe + nexus_be" [level=3] [ref=e220]
+          - paragraph [ref=e221]: Full-stack application system with a TypeScript frontend and Python backend. Modular architecture designed for extensibility and clean separation of concerns.
+          - generic [ref=e222]:
+            - generic [ref=e223]: TypeScript
+            - generic [ref=e224]: Python
+            - generic [ref=e225]: Full-Stack
+          - link "View " [ref=e226] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/nexus_fe
+            - text: View
+            - generic [ref=e227]: 
+        - article [ref=e228]:
+          - generic [ref=e230]: 
+          - heading "CSV2SQL" [level=3] [ref=e231]
+          - paragraph [ref=e232]: Convert CSV files to executable SQL insert statements with schema inference, type detection, and multi-table support. Simplifies data migration workflows.
+          - generic [ref=e233]:
+            - generic [ref=e234]: Python
+            - generic [ref=e235]: SQL
+            - generic [ref=e236]: Data
+          - link "View " [ref=e237] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/CSV2SQL
+            - text: View
+            - generic [ref=e238]: 
+        - article [ref=e239]:
+          - generic [ref=e241]: 
+          - heading "HealthyBaba" [level=3] [ref=e242]
+          - paragraph [ref=e243]: Health management application with symptom tracking, wellness recommendations, and health data visualization dashboards.
+          - generic [ref=e244]:
+            - generic [ref=e245]: Python
+            - generic [ref=e246]: HealthTech
+          - link "View " [ref=e247] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/HealthyBaba
+            - text: View
+            - generic [ref=e248]: 
+        - article [ref=e249]:
+          - generic [ref=e251]: 
+          - heading "Health Dashboard" [level=3] [ref=e252]
+          - paragraph [ref=e253]: Interactive health metrics dashboard with data visualization, trend analysis, and personalized health insights using Python data stack.
+          - generic [ref=e254]:
+            - generic [ref=e255]: Python
+            - generic [ref=e256]: Dash
+            - generic [ref=e257]: Visualization
+          - link "View " [ref=e258] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/Health_Dashboard
+            - text: View
+            - generic [ref=e259]: 
+        - article [ref=e260]:
+          - generic [ref=e262]: 
+          - heading "Omdena Kenya — Crop Disease" [level=3] [ref=e263]
+          - paragraph [ref=e264]: ML models for crop disease detection in Kenya using computer vision and deep learning. Part of Omdena's 40-person international AI collaboration.
+          - generic [ref=e265]:
+            - generic [ref=e266]: Python
+            - generic [ref=e267]: Computer Vision
+            - generic [ref=e268]: Deep Learning
+          - link "View " [ref=e269] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/Omdena-Kenya-CropDisease
+            - text: View
+            - generic [ref=e270]: 
+        - article [ref=e271]:
+          - generic [ref=e273]: 
+          - heading "COVID-19 Zambia Analysis" [level=3] [ref=e274]
+          - paragraph [ref=e275]: Data analysis and predictive modeling for COVID-19 trends in Zambia. Time-series forecasting with epidemiological data.
+          - generic [ref=e276]:
+            - generic [ref=e277]: Python
+            - generic [ref=e278]: Time Series
+            - generic [ref=e279]: Pandas
+          - link "View " [ref=e280] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/Covid19_Zambia
+            - text: View
+            - generic [ref=e281]: 
+        - article [ref=e282]:
+          - generic [ref=e284]: 
+          - heading "BERT Text Classification" [level=3] [ref=e285]
+          - paragraph [ref=e286]: Fine-tuned BERT models for multi-class text classification tasks with custom datasets, achieving strong performance on domain-specific NLP benchmarks.
+          - generic [ref=e287]:
+            - generic [ref=e288]: BERT
+            - generic [ref=e289]: PyTorch
+            - generic [ref=e290]: NLP
+          - link "View " [ref=e291] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/Bert-text-classification
+            - text: View
+            - generic [ref=e292]: 
+        - article [ref=e293]:
+          - heading "Meta Llama 3 Experiments" [level=3] [ref=e295]
+          - paragraph [ref=e296]: Experiments with Meta's Llama 3 models including inference optimization, prompt engineering patterns, and performance benchmarking.
+          - generic [ref=e297]:
+            - generic [ref=e298]: Llama 3
+            - generic [ref=e299]: Python
+            - generic [ref=e300]: LLM
+          - link "View " [ref=e301] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/Meta-llama3
+            - text: View
+            - generic [ref=e302]: 
+        - article [ref=e303]:
+          - generic [ref=e305]: 
+          - generic [ref=e306]:
+            - generic [ref=e307]: 
+            - text: "1"
+          - heading "Mistral-7B News Headline Inference" [level=3] [ref=e308]
+          - paragraph [ref=e309]: Inference pipeline using Mistral-7B for news headline generation and classification. Optimized for low-latency inference.
+          - generic [ref=e310]:
+            - generic [ref=e311]: Mistral
+            - generic [ref=e312]: Python
+            - generic [ref=e313]: NLP
+          - link "View " [ref=e314] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/Inference_Mistral-7B-News-Headline
+            - text: View
+            - generic [ref=e315]: 
+        - article [ref=e316]:
+          - generic [ref=e318]: 
+          - heading "Attendance + Mask Detection" [level=3] [ref=e319]
+          - paragraph [ref=e320]: Face recognition attendance system with real-time mask detection using OpenCV, Haar Cascade classifiers, CNNs, and VGG19-inspired deep learning.
+          - generic [ref=e321]:
+            - generic [ref=e322]: OpenCV
+            - generic [ref=e323]: CNN
+            - generic [ref=e324]: VGG19
+            - generic [ref=e325]: Python
+          - link "View " [ref=e326] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/Attendance
+            - text: View
+            - generic [ref=e327]: 
+        - article [ref=e328]:
+          - generic [ref=e330]: 
+          - heading "Flood Prediction" [level=3] [ref=e331]
+          - paragraph [ref=e332]: Time-series forecasting with XGBoost and LSTM models for flood and waterbody prediction, combining feature engineering with deployable predictive workflows.
+          - generic [ref=e333]:
+            - generic [ref=e334]: XGBoost
+            - generic [ref=e335]: LSTM
+            - generic [ref=e336]: Pandas
+        - article [ref=e337]:
+          - generic [ref=e339]: 
+          - heading "RhymeWeaver" [level=3] [ref=e340]
+          - paragraph [ref=e341]: Creative poetry generation tool using NLP techniques for rhyme detection, meter analysis, and AI-assisted verse composition.
+          - generic [ref=e342]:
+            - generic [ref=e343]: Python
+            - generic [ref=e344]: NLP
+            - generic [ref=e345]: Creative AI
+          - link "View " [ref=e346] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/RhymeWeaver
+            - text: View
+            - generic [ref=e347]: 
+        - article [ref=e348]:
+          - generic [ref=e350]: 
+          - heading "txt2xlsx" [level=3] [ref=e351]
+          - paragraph [ref=e352]: Utility tool to convert structured text files into formatted Excel spreadsheets with automatic column detection and styling.
+          - generic [ref=e353]:
+            - generic [ref=e354]: Python
+            - generic [ref=e355]: Data
+            - generic [ref=e356]: Utility
+          - link "View " [ref=e357] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/txt2xlsx
+            - text: View
+            - generic [ref=e358]: 
+        - article [ref=e359]:
+          - generic [ref=e361]: 
+          - generic [ref=e362]:
+            - generic [ref=e363]: 
+            - text: "1"
+          - heading "GDSC Projects" [level=3] [ref=e364]
+          - paragraph [ref=e365]: Collection of Google Developer Student Clubs projects including invoice processing (GDSC_INVOICE), Facebook analytics (GDSC_FB), and KNN classifier demos (GDSC_KNN). 50+ combined forks.
+          - generic [ref=e366]:
+            - generic [ref=e367]: Python
+            - generic [ref=e368]: ML
+            - generic [ref=e369]: Community
+          - link "View " [ref=e370] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/GDSC_INVOICE
+            - text: View
+            - generic [ref=e371]: 
+        - article [ref=e372]:
+          - generic [ref=e374]: 
+          - heading "Deep Learning Lab Sessions" [level=3] [ref=e375]
+          - paragraph [ref=e376]: Comprehensive collection of deep learning lab experiments, implementations, and coursework covering CNNs, RNNs, transformers, and generative models.
+          - generic [ref=e377]:
+            - generic [ref=e378]: Jupyter
+            - generic [ref=e379]: TensorFlow
+            - generic [ref=e380]: PyTorch
+          - link "View " [ref=e381] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/DL-LAB-SESSIONALS
+            - text: View
+            - generic [ref=e382]: 
+        - article [ref=e383]:
+          - generic [ref=e385]: 
+          - heading "xLx" [level=3] [ref=e386]
+          - paragraph [ref=e387]: Modern TypeScript application project with clean architecture patterns and efficient build tooling configuration.
+          - generic [ref=e388]:
+            - generic [ref=e389]: TypeScript
+            - generic [ref=e390]: Web
+          - link "View " [ref=e391] [cursor=pointer]:
+            - /url: https://github.com/Shivam5560/xLx
+            - text: View
+            - generic [ref=e392]: 
+    - generic [ref=e394]:
+      - generic [ref=e395]: Skills
+      - heading "Technologies I work with" [level=2] [ref=e396]
+      - generic [ref=e397]:
+        - generic [ref=e398]:
+          - heading " Languages" [level=3] [ref=e399]:
+            - generic [ref=e400]: 
+            - text: Languages
+          - generic [ref=e401]:
+            - generic [ref=e402]: Python
+            - generic [ref=e403]: Java 21
+            - generic [ref=e404]: TypeScript
+            - generic [ref=e405]: SQL
+            - generic [ref=e406]: R
+            - generic [ref=e407]: C
+            - generic [ref=e408]: HTML/CSS
+        - generic [ref=e409]:
+          - heading " AI & ML" [level=3] [ref=e410]:
+            - generic [ref=e411]: 
+            - text: AI & ML
+          - generic [ref=e412]:
+            - generic [ref=e413]: TensorFlow
+            - generic [ref=e414]: PyTorch
+            - generic [ref=e415]: Scikit-Learn
+            - generic [ref=e416]: Hugging Face
+            - generic [ref=e417]: LlamaIndex
+            - generic [ref=e418]: LangChain
+            - generic [ref=e419]: XGBoost
+            - generic [ref=e420]: NLTK
+            - generic [ref=e421]: spaCy
+            - generic [ref=e422]: Ollama
+        - generic [ref=e423]:
+          - heading " LLM & RAG" [level=3] [ref=e424]:
+            - generic [ref=e425]: 
+            - text: LLM & RAG
+          - generic [ref=e426]:
+            - generic [ref=e427]: RAG Pipelines
+            - generic [ref=e428]: Vector Databases
+            - generic [ref=e429]: Pinecone
+            - generic [ref=e430]: pgvector
+            - generic [ref=e431]: Cohere
+            - generic [ref=e432]: Groq
+            - generic [ref=e433]: Semantic Caching
+            - generic [ref=e434]: Hybrid Search
+            - generic [ref=e435]: Reranking
+            - generic [ref=e436]: Langfuse
+            - generic [ref=e437]: RAGAS
+        - generic [ref=e438]:
+          - heading " Backend & Cloud" [level=3] [ref=e439]:
+            - generic [ref=e440]: 
+            - text: Backend & Cloud
+          - generic [ref=e441]:
+            - generic [ref=e442]: Spring Boot
+            - generic [ref=e443]: FastAPI
+            - generic [ref=e444]: Next.js
+            - generic [ref=e445]: REST APIs
+            - generic [ref=e446]: GraphQL
+            - generic [ref=e447]: Camunda
+            - generic [ref=e448]: Spring Cloud Gateway
+            - generic [ref=e449]: Eureka
+            - generic [ref=e450]: Redis
+            - generic [ref=e451]: Apache Tomcat
+            - generic [ref=e452]: ActiveMQ
+        - generic [ref=e453]:
+          - heading " Data & Databases" [level=3] [ref=e454]:
+            - generic [ref=e455]: 
+            - text: Data & Databases
+          - generic [ref=e456]:
+            - generic [ref=e457]: PostgreSQL
+            - generic [ref=e458]: MongoDB
+            - generic [ref=e459]: OracleDB
+            - generic [ref=e460]: Pandas
+            - generic [ref=e461]: NumPy
+            - generic [ref=e462]: PySpark
+            - generic [ref=e463]: Power BI
+            - generic [ref=e464]: Tableau
+            - generic [ref=e465]: Looker
+            - generic [ref=e466]: Matplotlib
+            - generic [ref=e467]: Seaborn
+        - generic [ref=e468]:
+          - heading " Tools & Practices" [level=3] [ref=e469]:
+            - generic [ref=e470]: 
+            - text: Tools & Practices
+          - generic [ref=e471]:
+            - generic [ref=e472]: Git
+            - generic [ref=e473]: GitHub
+            - generic [ref=e474]: Jenkins
+            - generic [ref=e475]: Maven
+            - generic [ref=e476]: Docker
+            - generic [ref=e477]: Supabase
+            - generic [ref=e478]: Microservices
+            - generic [ref=e479]: Rate Limiting
+            - generic [ref=e480]: SSO
+            - generic [ref=e481]: Saga Pattern
+            - generic [ref=e482]: CI/CD
+    - generic [ref=e484]:
+      - generic [ref=e485]: Education
+      - generic [ref=e486]:
+        - generic [ref=e488]: 
+        - generic [ref=e489]:
+          - heading "B.Tech in Artificial Intelligence & Data Science" [level=3] [ref=e490]
+          - paragraph [ref=e491]: Sikkim Manipal Institute of Technology (SMIT), East Sikkim
+          - paragraph [ref=e492]:
+            - text: "Graduating May 2025 · CGPA:"
+            - strong [ref=e493]: 9.7 / 10
+    - generic [ref=e495]:
+      - generic [ref=e496]: Contact
+      - heading "Let's build something together" [level=2] [ref=e497]
+      - paragraph [ref=e498]: Available for AI engineering, RAG, LLM applications, and backend microservice roles.
+      - generic [ref=e499]:
+        - link " Email shivamsourav2003@gmail.com " [ref=e500] [cursor=pointer]:
+          - /url: mailto:shivamsourav2003@gmail.com
+          - generic [ref=e501]: 
+          - generic [ref=e502]:
+            - strong [ref=e503]: Email
+            - generic [ref=e504]: shivamsourav2003@gmail.com
+          - generic [ref=e505]: 
+        - link " Phone +91 85218 46844 " [ref=e506] [cursor=pointer]:
+          - /url: tel:+918521846844
+          - generic [ref=e507]: 
+          - generic [ref=e508]:
+            - strong [ref=e509]: Phone
+            - generic [ref=e510]: +91 85218 46844
+          - generic [ref=e511]: 
+        - link " GitHub github.com/Shivam5560 " [ref=e512] [cursor=pointer]:
+          - /url: https://github.com/Shivam5560
+          - generic [ref=e513]: 
+          - generic [ref=e514]:
+            - strong [ref=e515]: GitHub
+            - generic [ref=e516]: github.com/Shivam5560
+          - generic [ref=e517]: 
+        - link " LinkedIn shivam-sourav " [ref=e518] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/shivam-sourav-b889aa204/
+          - generic [ref=e519]: 
+          - generic [ref=e520]:
+            - strong [ref=e521]: LinkedIn
+            - generic [ref=e522]: shivam-sourav
+          - generic [ref=e523]: 
+  - contentinfo [ref=e524]:
+    - generic [ref=e525]:
+      - paragraph [ref=e526]: © 2026 Shivam Sourav. Built with care.
+      - generic [ref=e527]:
+        - link "" [ref=e528] [cursor=pointer]:
+          - /url: https://github.com/Shivam5560
+          - generic [ref=e529]: 
+        - link "" [ref=e530] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/shivam-sourav-b889aa204/
+          - generic [ref=e531]: 
+        - link "" [ref=e532] [cursor=pointer]:
+          - /url: mailto:shivamsourav2003@gmail.com
+          - generic [ref=e533]: 
