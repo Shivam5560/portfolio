@@ -74,7 +74,7 @@ const contacts = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative px-6 py-32">
+    <section id="contact" className="relative px-6 py-32 bg-canvas/60">
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <span className="section-label mb-3 block">Contact</span>

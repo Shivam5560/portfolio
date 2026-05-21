@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 export default function About() {
   return (
-    <section id="about" className="relative px-6 py-32">
+    <section id="about" className="relative px-6 py-32 bg-parchment/20">
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <span className="section-label mb-3 block">About</span>

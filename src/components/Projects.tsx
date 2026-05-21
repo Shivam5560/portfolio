@@ -132,8 +132,19 @@ function TiltProjectCard({ project }: { project: Project }) {
         const rect = ref.current.getBoundingClientRect();
         x.set((e.clientX - rect.left) / rect.width - 0.5);
         y.set((e.clientY - rect.top) / rect.height - 0.5);
+        window.dispatchEvent(new CustomEvent('project-hover', {
+          detail: {
+            x: e.clientX / window.innerWidth,
+            y: e.clientY / window.innerHeight,
+            active: true,
+          },
+        }));
       }}
-      onMouseLeave={() => { x.set(0); y.set(0); setIsHovered(false); }}
+      onMouseLeave={() => { x.set(0); y.set(0); setIsHovered(false);
+        window.dispatchEvent(new CustomEvent('project-hover', {
+          detail: { x: 0.5, y: 0.5, active: false },
+        }));
+      }}
       onMouseEnter={() => setIsHovered(true)}
     >
       <motion.div
