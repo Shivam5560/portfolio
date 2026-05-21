@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Reveal, { StaggerContainer, StaggerItem } from "./Reveal";
 import { Code2, Microchip, Globe, Server, Database, Wrench } from "lucide-react";
+import SkillGraph from "./SkillGraph";
 
 const skillGroups = [
   {
@@ -40,7 +41,7 @@ function SkillGroup({ group }: { group: typeof skillGroups[0] }) {
   return (
     <StaggerItem>
       <motion.div
-        className="rounded-2xl border border-sand-light bg-canvas p-6"
+        className="rounded-2xl border border-sand-light bg-canvas/85 backdrop-blur-sm p-6"
         whileHover={{
           y: -4,
           borderColor: "rgba(196,127,90,0.2)",
@@ -77,6 +78,7 @@ function SkillGroup({ group }: { group: typeof skillGroups[0] }) {
 export default function Skills() {
   return (
     <section id="skills" className="relative px-6 py-32">
+      <SkillGraph />
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <span className="section-label mb-3 block">Skills</span>
