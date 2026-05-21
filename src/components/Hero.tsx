@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { MapPin, FileText } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./Icons";
 import { CharCascade } from "./Reveal";
+import NeuralParticleField from "./NeuralParticleField";
 
 function MagneticButton({
   children,
@@ -81,6 +82,7 @@ export default function Hero() {
       onMouseMove={handleMouseMove}
       onMouseLeave={() => { rotateX.set(0); rotateY.set(0); }}
     >
+      <NeuralParticleField />
       <div className="mx-auto max-w-3xl text-center" ref={containerRef}>
         {/* Avatar with gradient border */}
         <motion.div
