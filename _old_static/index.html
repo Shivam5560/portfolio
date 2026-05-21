@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Sourav — AI/ML Engineer</title>
+    <meta name="description" content="Portfolio of Shivam Sourav, AI/ML Engineer building RAG systems, LLM applications, and production microservices.">
+    <meta property="og:title" content="Shivam Sourav — AI/ML Engineer">
+    <meta property="og:description" content="AI/ML engineer crafting RAG systems, LLM products, and production-grade microservices.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">SS</a>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="mailto:shivamsourav2003@gmail.com" class="nav-cta">Get in touch</a>
+    </div>
+</header>
+
+<main>
+
+<!-- Shader Background Canvas -->
+<canvas id="shader-canvas"></canvas>
+
+<!-- ── Hero ── -->
+<section class="hero">
+    <div class="hero-avatar" aria-hidden="true">SS</div>
+    <h1 class="hero-name">Shivam Sourav</h1>
+    <p class="hero-handle">@shivamsourav</p>
+    <p class="hero-location">
+        <i class="fa-solid fa-location-dot"></i> Kolkata, India
+    </p>
+    <p class="hero-role">AI/ML Engineer &amp; Associate Software Engineer</p>
+
+    <div class="hero-stats">
+        <div class="stat">
+            <strong>9.7</strong>
+            <span>B.Tech CGPA</span>
+        </div>
+        <div class="stat">
+            <strong>2+</strong>
+            <span>Years Coding</span>
+        </div>
+        <div class="stat">
+            <strong>10+</strong>
+            <span>AI Projects</span>
+        </div>
+    </div>
+
+    <div class="hero-actions">
+        <a href="mailto:shivamsourav2003@gmail.com" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Contact me
+        </a>
+        <a href="https://github.com/Shivam5560" target="_blank" rel="noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/shivam-sourav-b889aa204/" target="_blank" rel="noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="#" class="btn btn-outline" id="resumeBtn">
+            <i class="fa-solid fa-file-lines"></i> Resume
+        </a>
+    </div>
+
+    <div class="hero-badges">
+        <span class="badge badge-work"><i class="fa-solid fa-briefcase"></i> Open to work</span>
+        <span class="badge badge-achievement"><i class="fa-solid fa-star"></i> Pull Shark</span>
+        <span class="badge badge-achievement"><i class="fa-solid fa-rocket"></i> YOLO</span>
+    </div>
+</section>
+
+<!-- ── About ── -->
+<section id="about" class="section reveal">
+    <div class="container">
+        <div class="section-label">About</div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    I'm an AI/ML engineer passionate about building intelligent systems that move from experiments into production. Currently at <strong>Nomura Research Institute</strong>, I architect RAG platforms, LLM applications, and microservices that handle real workloads.
+                </p>
+                <p>
+                    My work spans the full stack of AI engineering — from fine-tuning LLMs and building retrieval pipelines to designing scalable Java microservices with Spring Boot. I've led teams at Omdena, built Text2SQL platforms, and shipped production-grade AI systems used by real users.
+                </p>
+                <p>
+                    I thrive at the intersection of research and engineering: taking papers and turning them into working, reliable software. When I'm not coding, I'm exploring new model architectures, contributing to open-source, or mentoring juniors in AI/ML.
+                </p>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <div>
+                        <strong>Nomura Research Institute</strong>
+                        <span>Associate Software Engineer (2024–Present)</span>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <strong>SMIT, Sikkim</strong>
+                        <span>B.Tech in AI &amp; Data Science · CGPA 9.7</span>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <div>
+                        <strong>Omdena</strong>
+                        <span>Data Scientist · Led 10-member ML team</span>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <i class="fa-solid fa-code"></i>
+                    <div>
+                        <strong>GitHub</strong>
+                        <span>10 followers · Open source contributor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Experience ── -->
+<section id="experience" class="section section-alt reveal">
+    <div class="container">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Where I've worked</h2>
+
+        <div class="exp-timeline">
+            <article class="exp-card exp-card--featured">
+                <div class="exp-period">Aug 2024 — Present</div>
+                <div class="exp-content">
+                    <h3>Associate Software Engineer</h3>
+                    <p class="exp-company">Nomura Research Institute and Financial Technology · Kolkata</p>
+                    <ul>
+                        <li>Architected a <strong>report microservice</strong> as a pluggable JAR framework enabling remote app integration and centralized report execution across multiple services.</li>
+                        <li>Designed a <strong>Camunda External Tasks & Saga-based workflow service</strong> for generic authorization flows on Java 21 and Spring Boot, orchestrating complex distributed transactions.</li>
+                        <li>Built a <strong>Python AI microservice</strong> with multi-tenant RAG, query decomposition, semantic caching, Langfuse observability, RAGAS evaluation, Spring Cloud Gateway, and Eureka service discovery.</li>
+                        <li>Implemented <strong>multi-strategy rate limiting</strong> and an <strong>SSO authentication bridge</strong> for cross-application single sign-on across the platform.</li>
+                        <li>Developed an <strong>LLM-based ATS</strong> (Applicant Tracking System) using LlamaIndex, Cohere embeddings, Pinecone vector DB, Next.js, and FastAPI — achieving <strong>90%+ resume matching quality</strong>.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Java 21</span><span>Spring Boot</span><span>Python</span><span>FastAPI</span><span>LlamaIndex</span><span>Pinecone</span><span>Cohere</span><span>Camunda</span><span>Langfuse</span><span>RAGAS</span><span>Next.js</span><span>Eureka</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="exp-card">
+                <div class="exp-period">Nov 2023 — Jun 2024</div>
+                <div class="exp-content">
+                    <h3>Data Scientist</h3>
+                    <p class="exp-company">Omdena · Remote</p>
+                    <ul>
+                        <li>Led a <strong>10-member subgroup</strong> across data preprocessing and ML model deployment within a 40-person international collaboration.</li>
+                        <li>Conducted focused <strong>Pandas & NumPy workshops</strong> that improved shared workflows and accelerated model delivery across the team.</li>
+                        <li>Contributed to <strong>Crop Disease Detection</strong> (Kenya) and <strong>COVID-19 analysis</strong> (Zambia) projects using ML and deep learning techniques.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span><span>Deep Learning</span><span>Team Leadership</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── Projects ── -->
+<section id="projects" class="section reveal">
+    <div class="container">
+        <div class="section-label">Projects</div>
+        <h2 class="section-title">What I've built</h2>
+        <p class="section-sub">Curated highlights across AI, full-stack, and data science.</p>
+
+        <!-- Featured -->
+        <div class="projects-featured">
+            <article class="proj-card proj-card--featured">
+                <div class="proj-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="proj-stars"><i class="fa-solid fa-star"></i> 2</div>
+                <h3>AuraSQL</h3>
+                <p>AI-powered Text2SQL platform with configurable multi-database connectivity, multi-table selection, executable SQL generation, Cohere embeddings, Pinecone schema retrieval, Groq LLMs, Supabase auth, and a Next.js dashboard. Cuts Text2SQL workflow time by 85%.</p>
+                <div class="proj-tags">
+                    <span>Next.js</span><span>TypeScript</span><span>Groq</span><span>Pinecone</span><span>Supabase</span><span>Cohere</span>
+                </div>
+                <a href="https://github.com/Shivam5560/AuraSQL" target="_blank" rel="noreferrer" class="proj-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="proj-card proj-card--featured">
+                <div class="proj-icon"><i class="fa-solid fa-robot"></i></div>
+                <div class="proj-stars"><i class="fa-solid fa-star"></i> 2</div>
+                <h3>Professional Grade RAG</h3>
+                <p>Production-ready RAG system with hybrid BM25 + semantic retrieval, mxbai-rerank-large-v2 reranking, LlamaIndex conversational context, Postgres + pgvector storage, Groq LLM integration, and traceable source citations. Built for reliability and scale.</p>
+                <div class="proj-tags">
+                    <span>LlamaIndex</span><span>Python</span><span>pgvector</span><span>Postgres</span><span>Groq</span><span>BM25</span>
+                </div>
+                <a href="https://github.com/Shivam5560/Professional_Grade_RAG" target="_blank" rel="noreferrer" class="proj-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="proj-card proj-card--featured">
+                <div class="proj-icon"><i class="fa-solid fa-message"></i></div>
+                <div class="proj-stars"><i class="fa-solid fa-star"></i> 2</div>
+                <h3>RAG Chatbot</h3>
+                <p>Conversational RAG chatbot with streaming responses, document upload, intelligent chunking strategies, and multi-turn conversation memory. Built with a clean, responsive frontend.</p>
+                <div class="proj-tags">
+                    <span>Python</span><span>LangChain</span><span>Streaming</span><span>Vector Search</span>
+                </div>
+                <a href="https://github.com/Shivam5560/RAG-CHATBOT" target="_blank" rel="noreferrer" class="proj-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+        </div>
+
+        <!-- Grid -->
+        <div class="projects-grid">
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+                <h3>ATS Resume Matcher</h3>
+                <p>LLM-based applicant tracking system with semantic resume-to-JD matching, explainable scoring, and Cohere embeddings with Pinecone vector search.</p>
+                <div class="proj-tags"><span>Python</span><span>Cohere</span><span>FastAPI</span><span>Pinecone</span></div>
+                <a href="https://github.com/Shivam5560/ATS" target="_blank" rel="noreferrer" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-file-export"></i></div>
+                <h3>ResumeGen</h3>
+                <p>AI-powered resume generator that creates tailored, ATS-optimized resumes from user input with multiple templates and formats. 1 star on GitHub.</p>
+                <div class="proj-tags"><span>TypeScript</span><span>Next.js</span><span>AI</span></div>
+                <a href="https://github.com/Shivam5560/ResumeGen" target="_blank" rel="noreferrer" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>Nepali LLM</h3>
+                <p>Trained a SentencePiece tokenizer on Nepali text reducing token count by 80%, then fine-tuned Gemma-2B with LoRA for low-resource language NLU.</p>
+                <div class="proj-tags"><span>Gemma</span><span>LoRA</span><span>Python</span><span>Streamlit</span></div>
+            </article>
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-file-csv"></i></div>
+                <h3>CSV2SQL</h3>
+                <p>Convert CSV files to executable SQL insert statements with schema inference, type detection, and multi-table support. Simplifies data migration workflows.</p>
+                <div class="proj-tags"><span>Python</span><span>SQL</span><span>Data</span></div>
+                <a href="https://github.com/Shivam5560/CSV2SQL" target="_blank" rel="noreferrer" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3>HealthyBaba</h3>
+                <p>Health management application with symptom tracking, wellness recommendations, and health data visualization dashboards.</p>
+                <div class="proj-tags"><span>Python</span><span>HealthTech</span></div>
+                <a href="https://github.com/Shivam5560/HealthyBaba" target="_blank" rel="noreferrer" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-leaf"></i></div>
+                <h3>Omdena Kenya — Crop Disease</h3>
+                <p>ML models for crop disease detection in Kenya using computer vision and deep learning. Part of Omdena's 40-person international AI collaboration.</p>
+                <div class="proj-tags"><span>Python</span><span>Computer Vision</span><span>Deep Learning</span></div>
+                <a href="https://github.com/Shivam5560/Omdena-Kenya-CropDisease" target="_blank" rel="noreferrer" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-virus-covid"></i></div>
+                <h3>COVID-19 Zambia Analysis</h3>
+                <p>Data analysis and predictive modeling for COVID-19 trends in Zambia. Time-series forecasting with epidemiological data.</p>
+                <div class="proj-tags"><span>Python</span><span>Time Series</span><span>Pandas</span></div>
+                <a href="https://github.com/Shivam5560/Covid19_Zambia" target="_blank" rel="noreferrer" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-language"></i></div>
+                <h3>BERT Text Classification</h3>
+                <p>Fine-tuned BERT models for multi-class text classification tasks with custom datasets, achieving strong performance on domain-specific NLP benchmarks.</p>
+                <div class="proj-tags"><span>BERT</span><span>PyTorch</span><span>NLP</span></div>
+                <a href="https://github.com/Shivam5560/Bert-text-classification" target="_blank" rel="noreferrer" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-camera"></i></div>
+                <h3>Attendance + Mask Detection</h3>
+                <p>Face recognition attendance system with real-time mask detection using OpenCV, Haar Cascade classifiers, CNNs, and VGG19-inspired deep learning.</p>
+                <div class="proj-tags"><span>OpenCV</span><span>CNN</span><span>VGG19</span><span>Python</span></div>
+                <a href="https://github.com/Shivam5560/Attendance" target="_blank" rel="noreferrer" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-water"></i></div>
+                <h3>Flood Prediction</h3>
+                <p>Time-series forecasting with XGBoost and LSTM models for flood and waterbody prediction, combining feature engineering with deployable predictive workflows.</p>
+                <div class="proj-tags"><span>XGBoost</span><span>LSTM</span><span>Pandas</span></div>
+            </article>
+
+            <article class="proj-card">
+                <div class="proj-icon"><i class="fa-solid fa-feather"></i></div>
+                <h3>RhymeWeaver</h3>
+                <p>Creative poetry generation tool using NLP techniques for rhyme detection, meter analysis, and AI-assisted verse composition.</p>
+                <div class="proj-tags"><span>Python</span><span>NLP</span><span>Creative AI</span></div>
+                <a href="https://github.com/Shivam5560/RhymeWeaver" target="_blank" rel="noreferrer" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── Skills ── -->
+<section id="skills" class="section section-alt reveal">
+    <div class="container">
+        <div class="section-label">Skills</div>
+        <h2 class="section-title">Technologies I work with</h2>
+
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                <div class="skill-chips">
+                    <span>Python</span><span>Java 21</span><span>TypeScript</span><span>SQL</span><span>R</span><span>C</span><span>HTML/CSS</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="fa-solid fa-microchip"></i> AI & ML</h3>
+                <div class="skill-chips">
+                    <span>TensorFlow</span><span>PyTorch</span><span>Scikit-Learn</span><span>Hugging Face</span><span>LlamaIndex</span><span>LangChain</span><span>XGBoost</span><span>NLTK</span><span>spaCy</span><span>Ollama</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="fa-solid fa-globe"></i> LLM & RAG</h3>
+                <div class="skill-chips">
+                    <span>RAG Pipelines</span><span>Vector Databases</span><span>Pinecone</span><span>pgvector</span><span>Cohere</span><span>Groq</span><span>Semantic Caching</span><span>Hybrid Search</span><span>Reranking</span><span>Langfuse</span><span>RAGAS</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="fa-solid fa-server"></i> Backend & Cloud</h3>
+                <div class="skill-chips">
+                    <span>Spring Boot</span><span>FastAPI</span><span>Next.js</span><span>REST APIs</span><span>GraphQL</span><span>Camunda</span><span>Spring Cloud Gateway</span><span>Eureka</span><span>Redis</span><span>Apache Tomcat</span><span>ActiveMQ</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="fa-solid fa-database"></i> Data & Databases</h3>
+                <div class="skill-chips">
+                    <span>PostgreSQL</span><span>MongoDB</span><span>OracleDB</span><span>Pandas</span><span>NumPy</span><span>PySpark</span><span>Power BI</span><span>Tableau</span><span>Looker</span><span>Matplotlib</span><span>Seaborn</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="fa-solid fa-wrench"></i> Tools & Practices</h3>
+                <div class="skill-chips">
+                    <span>Git</span><span>GitHub</span><span>Jenkins</span><span>Maven</span><span>Docker</span><span>Supabase</span><span>Microservices</span><span>Rate Limiting</span><span>SSO</span><span>Saga Pattern</span><span>CI/CD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Education ── -->
+<section class="section reveal">
+    <div class="container">
+        <div class="section-label">Education</div>
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-content">
+                <h3>B.Tech in Artificial Intelligence &amp; Data Science</h3>
+                <p class="edu-school">Sikkim Manipal Institute of Technology (SMIT), East Sikkim</p>
+                <p class="edu-meta">Graduating May 2025 · CGPA: <strong>9.7 / 10</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Contact ── -->
+<section id="contact" class="section section-alt reveal">
+    <div class="container">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's build something together</h2>
+        <p class="section-sub">Available for AI engineering, RAG, LLM applications, and backend microservice roles.</p>
+
+        <div class="contact-grid">
+            <a href="mailto:shivamsourav2003@gmail.com" class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <strong>Email</strong>
+                    <span>shivamsourav2003@gmail.com</span>
+                </div>
+                <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="tel:+918521846844" class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <strong>Phone</strong>
+                    <span>+91 85218 46844</span>
+                </div>
+                <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://github.com/Shivam5560" target="_blank" rel="noreferrer" class="contact-card">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                    <strong>GitHub</strong>
+                    <span>github.com/Shivam5560</span>
+                </div>
+                <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shivam-sourav-b889aa204/" target="_blank" rel="noreferrer" class="contact-card">
+                <i class="fa-brands fa-linkedin"></i>
+                <div>
+                    <strong>LinkedIn</strong>
+                    <span>shivam-sourav</span>
+                </div>
+                <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Shivam Sourav. Built with care.</p>
+        <div class="footer-links">
+            <a href="https://github.com/Shivam5560" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shivam-sourav-b889aa204/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:shivamsourav2003@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // ── Scroll Reveal ──
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ── WebGL Shader Background ──
+    const canvas = document.getElementById('shader-canvas');
+    if (canvas) {
+        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+        if (gl) {
+            let width, height;
+            function resize() {
+                width = window.innerWidth;
+                height = window.innerHeight;
+                canvas.width = width;
+                canvas.height = height;
+                gl.viewport(0, 0, width, height);
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            const vertexSrc = `
+                attribute vec2 a_pos;
+                void main() { gl_Position = vec4(a_pos, 0.0, 1.0); }
+            `;
+            const fragmentSrc = `
+                precision mediump float;
+                uniform vec2 u_res;
+                uniform float u_time;
+                uniform vec2 u_mouse;
+
+                float hash(vec2 p) {
+                    return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+                }
+                float noise(vec2 p) {
+                    vec2 i = floor(p);
+                    vec2 f = fract(p);
+                    f = f * f * (3.0 - 2.0 * f);
+                    float a = hash(i);
+                    float b = hash(i + vec2(1.0, 0.0));
+                    float c = hash(i + vec2(0.0, 1.0));
+                    float d = hash(i + vec2(1.0, 1.0));
+                    return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+                }
+                float fbm(vec2 p) {
+                    float v = 0.0;
+                    float a = 0.5;
+                    for (int i = 0; i < 5; i++) {
+                        v += a * noise(p);
+                        p *= 2.0;
+                        a *= 0.5;
+                    }
+                    return v;
+                }
+                void main() {
+                    vec2 uv = gl_FragCoord.xy / u_res;
+                    vec2 p = uv * 3.0;
+                    float t = u_time * 0.15;
+
+                    // Mouse influence
+                    vec2 mouse = u_mouse / u_res;
+                    float mouseDist = length(uv - mouse);
+                    float mouseGlow = smoothstep(0.5, 0.0, mouseDist) * 0.15;
+
+                    // Organic flowing noise
+                    float n1 = fbm(p + vec2(t, t * 0.7));
+                    float n2 = fbm(p * 1.5 + vec2(-t * 0.8, t * 0.5) + n1 * 0.5);
+                    float n3 = fbm(p * 0.8 + vec2(t * 0.3, -t * 0.4) + n2 * 0.3);
+
+                    // Color palette - teal/cyan/purple
+                    vec3 col1 = vec3(0.0, 0.83, 0.67);   // accent teal
+                    vec3 col2 = vec3(0.65, 0.55, 0.98);  // purple
+                    vec3 col3 = vec3(0.0, 0.55, 0.45);   // dark teal
+                    vec3 col4 = vec3(0.04, 0.04, 0.06);  // bg
+
+                    vec3 color = mix(col4, col3, n1 * 0.3 + mouseGlow);
+                    color = mix(color, col1, n2 * n3 * 0.25);
+                    color = mix(color, col2, n3 * n1 * 0.15);
+
+                    // Vignette
+                    float vignette = 1.0 - smoothstep(0.3, 1.2, length(uv - 0.5) * 1.5);
+                    color *= vignette * 0.7 + 0.3;
+
+                    gl_FragColor = vec4(color, 1.0);
+                }
+            `;
+
+            function createShader(type, src) {
+                const s = gl.createShader(type);
+                gl.shaderSource(s, src);
+                gl.compileShader(s);
+                return s;
+            }
+            const prog = gl.createProgram();
+            gl.attachShader(prog, createShader(gl.VERTEX_SHADER, vertexSrc));
+            gl.attachShader(prog, createShader(gl.FRAGMENT_SHADER, fragmentSrc));
+            gl.linkProgram(prog);
+            gl.useProgram(prog);
+
+            const buf = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+            gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+            const aPos = gl.getAttribLocation(prog, 'a_pos');
+            gl.enableVertexAttribArray(aPos);
+            gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+            const uRes = gl.getUniformLocation(prog, 'u_res');
+            const uTime = gl.getUniformLocation(prog, 'u_time');
+            const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+            let mouseX = width / 2, mouseY = height / 2;
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = height - e.clientY;
+            });
+
+            let startTime = performance.now();
+            function render() {
+                gl.uniform2f(uRes, width, height);
+                gl.uniform1f(uTime, (performance.now() - startTime) / 1000);
+                gl.uniform2f(uMouse, mouseX, mouseY);
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+                requestAnimationFrame(render);
+            }
+            render();
+        }
+    }
+
+    // ── Floating Particles ──
+    function createParticles() {
+        const colors = ['#00d4aa', '#a78bfa', '#ffd166'];
+        for (let i = 0; i < 20; i++) {
+            const p = document.createElement('div');
+            p.className = 'particle';
+            const size = Math.random() * 3 + 1;
+            p.style.width = size + 'px';
+            p.style.height = size + 'px';
+            p.style.background = colors[Math.floor(Math.random() * colors.length)];
+            p.style.left = Math.random() * 100 + 'vw';
+            p.style.animationDuration = (Math.random() * 15 + 10) + 's';
+            p.style.animationDelay = (Math.random() * 10) + 's';
+            p.style.boxShadow = `0 0 ${size * 3}px ${p.style.background}`;
+            document.body.appendChild(p);
+        }
+    }
+    createParticles();
+</script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Reveal, { StaggerContainer, StaggerItem } from "./Reveal";
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase } from "lucide-react";
 
 interface ExpCardProps {
   period: string;

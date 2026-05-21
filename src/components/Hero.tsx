@@ -14,11 +14,12 @@ function MagneticButton({
   children: React.ReactNode;
   href: string;
   primary?: boolean;
-  icon?: React.ElementType;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  icon?: React.ComponentType<any>;
 }) {
   const ref = useRef<HTMLAnchorElement>(null);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const x = useMotionValue<number>(0);
+  const y = useMotionValue<number>(0);
   const springConfig = { damping: 15, stiffness: 150 };
   const springX = useSpring(x, springConfig);
   const springY = useSpring(y, springConfig);
@@ -64,8 +65,8 @@ const skills = [
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const rotateX = useMotionValue(0);
-  const rotateY = useMotionValue(0);
+  const rotateX = useMotionValue<number>(0);
+  const rotateY = useMotionValue<number>(0);
   const springRotateX = useSpring(rotateX, { damping: 20, stiffness: 200 });
   const springRotateY = useSpring(rotateY, { damping: 20, stiffness: 200 });
 

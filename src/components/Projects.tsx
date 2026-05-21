@@ -4,7 +4,8 @@ import Reveal, { StaggerContainer, StaggerItem } from "./Reveal";
 import { Star, ExternalLink, Database, Bot, MessageSquare, FileCheck, FileOutput, Brain, FileSpreadsheet, HeartPulse, Leaf, Languages, Camera, Droplets, Feather } from "lucide-react";
 import { VirusIcon } from "./Icons";
 
-const iconMap: Record<string, React.ElementType> = {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const iconMap: Record<string, React.ComponentType<any>> = {
   Database, Bot, MessageSquare, FileCheck, FileOutput, Brain,
   FileSpreadsheet, HeartPulse, Leaf, Virus: VirusIcon, Languages,
   Camera, Droplets, Feather,
@@ -115,8 +116,8 @@ const others = projects.filter((p) => !p.featured);
 
 function TiltProjectCard({ project }: { project: Project }) {
   const ref = useRef<HTMLDivElement>(null);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const x = useMotionValue<number>(0);
+  const y = useMotionValue<number>(0);
   const springConfig = { damping: 25, stiffness: 300 };
   const rotateX = useSpring(useTransform(y, [-0.5, 0.5], [6, -6]), springConfig);
   const rotateY = useSpring(useTransform(x, [-0.5, 0.5], [-6, 6]), springConfig);

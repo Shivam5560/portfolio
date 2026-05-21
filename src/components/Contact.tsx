@@ -5,7 +5,8 @@ import { Mail, Phone, ArrowRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./Icons";
 
 interface ContactCardProps {
-  icon: React.ElementType;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  icon: React.ComponentType<any>;
   label: string;
   value: string;
   href: string;
@@ -13,8 +14,8 @@ interface ContactCardProps {
 
 function MagneticContactCard({ icon: Icon, label, value, href }: ContactCardProps) {
   const ref = useRef<HTMLAnchorElement>(null);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const x = useMotionValue<number>(0);
+  const y = useMotionValue<number>(0);
   const springConfig = { damping: 15, stiffness: 150 };
   const springX = useSpring(x, springConfig);
   const springY = useSpring(y, springConfig);
