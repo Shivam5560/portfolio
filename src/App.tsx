@@ -1,5 +1,4 @@
-import { lazy, Suspense } from "react";
-import ShaderBackground from "./components/ShaderBackground";
+import SectionShaders from "./components/SectionShaders";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,18 +9,11 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-const ThreeScene = lazy(() => import("./components/ThreeScene"));
-
 function App() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-canvas">
-      {/* Shader background */}
-      <ShaderBackground />
-
-      {/* 3D geometric shapes (desktop only, no SSR flash) */}
-      <Suspense fallback={null}>
-        <ThreeScene />
-      </Suspense>
+      {/* Section-aware shader system */}
+      <SectionShaders />
 
       {/* Content */}
       <div className="relative z-10">
