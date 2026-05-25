@@ -197,6 +197,7 @@ export default function SkillGraph() {
         camera={{ position: [0, 0, 4.5], fov: 50 }}
         dpr={[1, 1.5]}
         gl={{ antialias: true, alpha: true }}
+        scene={{ background: null }}
         style={{ background: 'transparent' }}
       >
         <ambientLight intensity={0.5} />

@@ -1,6 +1,7 @@
 export const rippleFieldFrag = `#version 300 es
 precision highp float;
 
+out vec4 fragColor;
 uniform float uTime;
 uniform vec2 uResolution;
 uniform vec2 uMouse;
@@ -32,7 +33,7 @@ void main() {
   float vignette = 1.0 - length(uv - 0.5) * 0.35;
   color *= vignette;
 
-  gl_FragColor = vec4(color, 1.0);
+  fragColor = vec4(color, 1.0);
 }
 `;
 

@@ -86,6 +86,9 @@ export default function SectionShaders() {
     if (!gl) return;
     glRef.current = gl;
 
+    // Warm canvas clear color
+    gl.clearColor(0.988, 0.976, 0.961, 1.0);
+
     // Full-screen quad vertices
     const vertices = new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]);
     const buf = gl.createBuffer();
@@ -159,6 +162,8 @@ export default function SectionShaders() {
       const section = activeSectionRef.current;
       const def = shaders[section];
 
+      gl.clear(gl.COLOR_BUFFER_BIT);
+
       if (def) {
         const program = progMap.get(section);
         if (program) {
@@ -230,6 +235,7 @@ export default function SectionShaders() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 z-0 hidden md:block"
+      style={{ background: '#FCF9F5' }}
       aria-hidden="true"
     />
   );

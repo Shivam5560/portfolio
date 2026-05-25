@@ -8,15 +8,14 @@ export default function About() {
         <Reveal>
           <span className="section-label mb-3 block">About</span>
         </Reveal>
+        <Reveal delay={0.1}>
+          <h2 className="mb-12 font-serif text-3xl font-semibold sm:text-4xl gradient-text">
+            Bridging research and engineering
+          </h2>
+        </Reveal>
 
         <div className="grid gap-12 lg:grid-cols-5 lg:gap-16">
           <div className="lg:col-span-3">
-            <Reveal delay={0.1}>
-              <h2 className="mb-6 font-serif text-3xl font-semibold leading-tight sm:text-4xl gradient-text">
-                Building intelligent systems that move from experiments into production.
-              </h2>
-            </Reveal>
-
             <div className="space-y-4 text-ink/65 font-serif">
               <Reveal delay={0.2}>
                 <p className="leading-relaxed">

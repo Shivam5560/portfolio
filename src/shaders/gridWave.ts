@@ -1,6 +1,7 @@
 export const gridWaveFrag = `#version 300 es
 precision highp float;
 
+out vec4 fragColor;
 uniform float uTime;
 uniform vec2 uResolution;
 uniform vec2 uHoverPos;
@@ -34,7 +35,7 @@ void main() {
   color = mix(color, terracotta, alpha);
   color = mix(color, plum, alpha * wave * 2.0);
 
-  gl_FragColor = vec4(color, 1.0);
+  fragColor = vec4(color, 1.0);
 }
 `;
 

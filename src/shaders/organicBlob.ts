@@ -1,6 +1,7 @@
 export const organicBlobFrag = `#version 300 es
 precision highp float;
 
+out vec4 fragColor;
 uniform float uTime;
 uniform vec2 uResolution;
 
@@ -53,7 +54,7 @@ void main() {
   float vignette = 1.0 - length(uv - 0.5) * 0.4;
   color *= vignette;
 
-  gl_FragColor = vec4(color, 1.0);
+  fragColor = vec4(color, 1.0);
 }
 `;
 

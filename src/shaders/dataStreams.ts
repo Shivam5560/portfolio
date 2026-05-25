@@ -1,6 +1,7 @@
 export const dataStreamsFrag = `#version 300 es
 precision highp float;
 
+out vec4 fragColor;
 uniform float uTime;
 uniform vec2 uResolution;
 uniform float uScrollOffset;
@@ -31,7 +32,7 @@ void main() {
     color = mix(color, lineColor, alpha);
   }
 
-  gl_FragColor = vec4(color, 1.0);
+  fragColor = vec4(color, 1.0);
 }
 `;
 

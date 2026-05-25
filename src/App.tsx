@@ -1,6 +1,7 @@
 import SectionShaders from "./components/SectionShaders";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import { TextRevealByWord } from "./components/ui/text-reveal";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -19,6 +20,7 @@ function App() {
       <div className="relative z-10">
         <Navbar />
         <Hero />
+        <TextRevealByWord text="Building intelligent systems that move from experiments into production." />
         <About />
         <Experience />
         <Projects />
