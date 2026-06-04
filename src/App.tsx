@@ -9,16 +9,21 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import NoiseOverlay from "./components/NoiseOverlay";
+import CursorTrailer from "./components/CursorTrailer";
 
 function App() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-canvas">
+    <div className="relative min-h-screen overflow-hidden bg-midnight text-text">
+      <NoiseOverlay />
+      <CursorTrailer />
       {/* Section-aware shader system */}
       <SectionShaders />
 
+      <Navbar />
+
       {/* Content */}
       <div className="relative z-10">
-        <Navbar />
         <Hero />
         <TextRevealByWord text="Building intelligent systems that move from experiments into production." />
         <About />

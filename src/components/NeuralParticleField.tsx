@@ -3,12 +3,15 @@ import { useEffect, useRef } from 'react';
 const PARTICLE_COUNT = 2000;
 
 const vertexShader = `#version 300 es
-in vec2 aPosition;
-in vec2 aVelocity;
-in float aLife;
+layout(location = 0) in vec2 aPosition;
+layout(location = 1) in vec2 aVelocity;
+layout(location = 2) in float aLife;
 uniform float uTime;
 uniform vec2 uMouse;
 uniform vec2 uResolution;
+
+out vec2 vPosition;
+out vec2 vVelocity;
 out float vLife;
 out float vAlpha;
 
@@ -59,7 +62,14 @@ void main() {
   float edgeFade = 1.0 - smoothstep(0.7, 1.0, abs(newPos.x)) * 0.5;
   edgeFade *= 1.0 - smoothstep(0.7, 1.0, abs(newPos.y)) * 0.5;
 
-  vLife = aLife;
+  float newLife = aLife - 0.005;
+  if (newLife <= 0.0) {
+    newLife = 1.0;
+  }
+
+  vPosition = newPos;
+  vVelocity = vel + (noiseForce + mouseForce) * 0.1;
+  vLife = newLife;
   vAlpha = (0.15 + attention * 0.4 + speed * 0.2) * edgeFade;
 
   gl_Position = vec4(newPos, 0.0, 1.0);
@@ -78,16 +88,16 @@ void main() {
   float dist = length(uv);
   float alpha = smoothstep(0.5, 0.0, dist) * vAlpha;
 
-  vec3 terracotta = vec3(0.769, 0.498, 0.353);
-  vec3 plum = vec3(0.545, 0.369, 0.486);
-  vec3 dustyBlue = vec3(0.357, 0.541, 0.620);
-  vec3 sage = vec3(0.627, 0.784, 0.690);
+  vec3 emerald = vec3(0.0, 0.898, 0.459); // #00e575
+  vec3 gold = vec3(0.831, 0.686, 0.216); // #d4af37
+  vec3 sage = vec3(0.471, 0.529, 0.494); // #78877e
+  vec3 white = vec3(1.0, 1.0, 1.0); // white glow
 
   float t = vLife;
-  vec3 color = mix(terracotta, plum, smoothstep(0.2, 0.5, t));
-  color = mix(color, dustyBlue, smoothstep(0.4, 0.7, t));
-  color = mix(color, sage, smoothstep(0.6, 0.9, t));
-  color += color * smoothstep(0.3, 0.0, dist) * 0.5;
+  vec3 color = mix(emerald, gold, smoothstep(0.2, 0.5, t));
+  color = mix(color, sage, smoothstep(0.4, 0.7, t));
+  color = mix(color, white, smoothstep(0.6, 0.9, t));
+  color += color * smoothstep(0.3, 0.0, dist) * 0.8;
 
   fragColor = vec4(color, alpha);
 }
@@ -126,7 +136,7 @@ export default function NeuralParticleField() {
     gl.attachShader(program, vs);
     gl.attachShader(program, fs);
 
-    gl.transformFeedbackVaryings(program, ['aPosition', 'aVelocity', 'aLife'], gl.SEPARATE_ATTRIBS);
+    gl.transformFeedbackVaryings(program, ['vPosition', 'vVelocity', 'vLife'], gl.SEPARATE_ATTRIBS);
     gl.linkProgram(program);
 
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
@@ -187,6 +197,11 @@ export default function NeuralParticleField() {
       gl.bindBufferBase(gl.TRANSFORM_FEEDBACK_BUFFER, 2, dst.life);
     }
 
+    // Clean up bindings after initialization
+    gl.bindBuffer(gl.ARRAY_BUFFER, null);
+    gl.bindVertexArray(null);
+    gl.bindTransformFeedback(gl.TRANSFORM_FEEDBACK, null);
+
     const uTime = gl.getUniformLocation(program, 'uTime');
     const uMouse = gl.getUniformLocation(program, 'uMouse');
     const uResolution = gl.getUniformLocation(program, 'uResolution');
@@ -222,9 +237,25 @@ export default function NeuralParticleField() {
       gl.bindVertexArray(vaos[currentVao]);
       gl.bindTransformFeedback(gl.TRANSFORM_FEEDBACK, tfbs[currentVao]);
 
+      const dst = currentVao === 0 ? buffersB : buffersA;
+      gl.bindBufferBase(gl.TRANSFORM_FEEDBACK_BUFFER, 0, dst.pos);
+      gl.bindBufferBase(gl.TRANSFORM_FEEDBACK_BUFFER, 1, dst.vel);
+      gl.bindBufferBase(gl.TRANSFORM_FEEDBACK_BUFFER, 2, dst.life);
+
+      // Unbind generic targets to prevent collision warnings
+      gl.bindBuffer(gl.TRANSFORM_FEEDBACK_BUFFER, null);
+      gl.bindBuffer(gl.ARRAY_BUFFER, null);
+
       gl.beginTransformFeedback(gl.POINTS);
       gl.drawArrays(gl.POINTS, 0, PARTICLE_COUNT);
       gl.endTransformFeedback();
+
+      // Unbind to prevent target collision warnings
+      gl.bindBufferBase(gl.TRANSFORM_FEEDBACK_BUFFER, 0, null);
+      gl.bindBufferBase(gl.TRANSFORM_FEEDBACK_BUFFER, 1, null);
+      gl.bindBufferBase(gl.TRANSFORM_FEEDBACK_BUFFER, 2, null);
+      gl.bindVertexArray(null);
+      gl.bindTransformFeedback(gl.TRANSFORM_FEEDBACK, null);
 
       currentVao = 1 - currentVao;
 

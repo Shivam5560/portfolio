@@ -26,11 +26,11 @@ export default function Reveal({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y, filter: blur ? "blur(8px)" : "blur(0px)" }}
+      initial={{ opacity: 0, y, filter: blur ? "blur(12px)" : "blur(0px)" }}
       animate={
         isInView
           ? { opacity: 1, y: 0, filter: "blur(0px)" }
-          : { opacity: 0, y, filter: blur ? "blur(8px)" : "blur(0px)" }
+          : { opacity: 0, y, filter: blur ? "blur(12px)" : "blur(0px)" }
       }
       transition={{
         duration,
@@ -91,7 +91,7 @@ interface StaggerItemProps {
 
 export function StaggerItem({ children, className = "" }: StaggerItemProps) {
   const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 24, filter: "blur(4px)" },
+    hidden: { opacity: 0, y: 24, filter: "blur(8px)" },
     visible: {
       opacity: 1,
       y: 0,
@@ -118,31 +118,35 @@ interface CharCascadeProps {
 }
 
 export function CharCascade({ text, className = "", delay = 0 }: CharCascadeProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-40px" });
-
-  const chars = text.split("");
+  const words = text.split(" ");
+  let charIndex = 0;
 
   return (
-    <span ref={ref} className={className} aria-label={text}>
-      {chars.map((char, i) => (
-        <motion.span
-          key={i}
-          className={`inline-block ${char === " " ? "w-[0.3em]" : ""}`}
-          initial={{ opacity: 0, y: 20, filter: "blur(3px)" }}
-          animate={
-            isInView
-              ? { opacity: 1, y: 0, filter: "blur(0px)" }
-              : { opacity: 0, y: 20, filter: "blur(3px)" }
-          }
-          transition={{
-            duration: 0.35,
-            delay: delay + i * 0.03,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-        >
-          {char === " " ? " " : char}
-        </motion.span>
+    <span className={className} aria-label={text}>
+      {words.map((word, wIdx) => (
+        <span key={wIdx} className="inline-block whitespace-nowrap">
+          {word.split("").map((char) => {
+            const currentIdx = charIndex++;
+            return (
+              <motion.span
+                key={currentIdx}
+                className="inline-block"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.35,
+                  delay: delay + currentIdx * 0.03,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              >
+                {char}
+              </motion.span>
+            );
+          })}
+          {wIdx < words.length - 1 && (
+            <span className="inline-block w-[0.3em]">&nbsp;</span>
+          )}
+        </span>
       ))}
     </span>
   );

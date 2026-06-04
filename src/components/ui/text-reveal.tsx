@@ -32,7 +32,7 @@ const TextRevealByWord: FC<TextRevealByWordProps> = ({
         <p
           ref={targetRef}
           className={
-            "flex flex-wrap p-5 text-2xl font-bold text-sand/30 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl"
+            "flex flex-wrap p-5 text-2xl font-bold text-text-dim md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl"
           }
         >
           {words.map((word, i) => {
@@ -57,17 +57,14 @@ interface WordProps {
 }
 
 const Word: FC<WordProps> = ({ children, progress, range }) => {
-  const opacity = useTransform(progress, range, [0, 1]);
+  const opacity = useTransform(progress, range, [0.15, 1]);
   return (
-    <span className="relative mx-1 inline-block lg:mx-2.5">
-      <span className="absolute left-0 top-0 text-sand/30">{children}</span>
-      <motion.span
-        style={{ opacity: opacity }}
-        className="gradient-text"
-      >
-        {children}
-      </motion.span>
-    </span>
+    <motion.span
+      style={{ opacity }}
+      className="mx-1 inline-block lg:mx-2.5 gradient-text"
+    >
+      {children}
+    </motion.span>
   );
 };
 

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { commonVertex, warmAmbientFrag } from '../shaders';
+import { commonVertex, auroraFrag } from '../shaders';
 
 function compileShader(gl: WebGL2RenderingContext, type: number, src: string): WebGLShader {
   const shader = gl.createShader(type)!;
@@ -23,6 +23,7 @@ export default function SectionShaders() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const glRef = useRef<WebGL2RenderingContext | null>(null);
   const animFrameRef = useRef<number>(0);
+  const mouseRef = useRef({ x: 0, y: 0 });
 
   const prefersReduced = typeof window !== 'undefined'
     && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
@@ -36,7 +37,8 @@ export default function SectionShaders() {
     if (!gl) return;
     glRef.current = gl;
 
-    gl.clearColor(0.988, 0.976, 0.961, 1.0);
+    // Obsidian background
+    gl.clearColor(0.012, 0.02, 0.016, 1.0);
 
     const vertices = new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]);
     const buf = gl.createBuffer();
@@ -55,8 +57,13 @@ export default function SectionShaders() {
     };
     resize();
     window.addEventListener('resize', resize);
+    
+    const onMouse = (e: MouseEvent) => {
+      mouseRef.current = { x: e.clientX, y: window.innerHeight - e.clientY };
+    };
+    window.addEventListener('mousemove', onMouse, { passive: true });
 
-    const program = createProgram(gl, warmAmbientFrag);
+    const program = createProgram(gl, auroraFrag);
     gl.useProgram(program);
 
     const aPos = gl.getAttribLocation(program, 'aPosition');
@@ -65,6 +72,7 @@ export default function SectionShaders() {
 
     const uTime = gl.getUniformLocation(program, 'uTime');
     const uResolution = gl.getUniformLocation(program, 'uResolution');
+    const uMouse = gl.getUniformLocation(program, 'uMouse');
 
     const handleContextLost = (e: Event) => {
       e.preventDefault();
@@ -73,7 +81,19 @@ export default function SectionShaders() {
     canvas.addEventListener('webglcontextlost', handleContextLost);
 
     let start = performance.now();
+    
+    // FPS cap variables
+    const fpsLimit = 30;
+    const frameTime = 1000 / fpsLimit;
+    let lastTime = 0;
+    
     const render = (now: number) => {
+      animFrameRef.current = requestAnimationFrame(render);
+      
+      const elapsed = now - lastTime;
+      if (elapsed < frameTime) return;
+      lastTime = now - (elapsed % frameTime);
+
       const t = (now - start) * 0.001;
 
       gl.clear(gl.COLOR_BUFFER_BIT);
@@ -84,15 +104,15 @@ export default function SectionShaders() {
 
       gl.uniform1f(uTime, t);
       gl.uniform2f(uResolution, canvas.width, canvas.height);
+      gl.uniform2f(uMouse, mouseRef.current.x, mouseRef.current.y);
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-
-      animFrameRef.current = requestAnimationFrame(render);
     };
     animFrameRef.current = requestAnimationFrame(render);
 
     return () => {
       cancelAnimationFrame(animFrameRef.current);
       window.removeEventListener('resize', resize);
+      window.removeEventListener('mousemove', onMouse);
       canvas.removeEventListener('webglcontextlost', handleContextLost);
       gl.deleteProgram(program);
     };
@@ -104,7 +124,7 @@ export default function SectionShaders() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 z-0 hidden md:block"
-      style={{ background: '#FCF9F5' }}
+      style={{ background: '#030504' }}
       aria-hidden="true"
     />
   );
